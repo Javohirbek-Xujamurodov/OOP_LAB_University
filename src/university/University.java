@@ -7,7 +7,7 @@ public class University {
     private Student[] students;
     private Course[] courses;
 
-    private  int idStudentCounter = 10000;
+    private  int studentIdCounter  = 10000;
     private	 int idCourseCounter = 10;
 
     public University(String name){
@@ -30,9 +30,9 @@ public class University {
     }
 
     public int enroll(String first, String last){
-        Student student = new Student(idStudentCounter,first,last);
-        students[idStudentCounter - 10000] = student;
-        idStudentCounter++;
+        Student student = new Student(studentIdCounter ,first,last);
+        students[studentIdCounter  - 10000] = student;
+        studentIdCounter ++;
         return student.getId();
     }
 

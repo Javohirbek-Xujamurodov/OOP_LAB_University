@@ -2,16 +2,15 @@ package university;
 
 public class Student {
     private int id;
-    private String firtName;
+    private String firstName;
     private String lastName;
-
     private Course[] courses;
 
     private int courseCount = 0;
 
-    public Student(int id, String firtName, String lastName) {
+    public Student(int id, String firstName, String lastName) {
         this.id = id;
-        this.firtName = firtName;
+        this.firstName = firstName;
         this.lastName = lastName;
         courses = new Course[25];
     }
@@ -21,7 +20,7 @@ public class Student {
     }
 
     public String getFirtName(){
-        return firtName;
+        return firstName;
     }
 
     public String getLastName(){
@@ -42,6 +41,6 @@ public class Student {
     }
 
     public String toString(){
-        return id + " " + firtName + " " + lastName;
+        return id + " " + firstName + " " + lastName;
     }
 }
